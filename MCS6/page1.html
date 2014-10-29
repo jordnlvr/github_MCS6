@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page 1 Here</title>
+        <link href="styles/foundation.css" rel="stylesheet" />
+        <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+        <link href="styles/ratchetCS.css" rel="stylesheet" />
+        <link href="styles/ratchet-theme-ios.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!------NAV BAR AT TOP-------------NAV BAR AT TOP-------------NAV BAR AT TOP-------------NAV BAR AT TOP------->
+        <!------------------------------------------------------------------------------------------------------------>
+        <header class="bar bar-nav">
+            <img class="media pull-left" src="img/blueOrngBall32.png" style="padding-top: 5px;" />
+            <!--TITLE AT THE TOP OF THE PAGE-->
+            <h1 class="title">D&amp;M Concessions</h1>
+            <a class="btn btn-link bnt-nav pull-right" id="btnBack" onclick="goBack()">BACK</a>
+        </header>
+        <!------------------------------------------------------------------------------------------------------------>
+        <!-----FULL CONTENT AREA----------FULL CONTENT AREA----------FULL CONTENT AREA----------FULL CONTENT AREA----->
+        <!------------------------------------------------------------------------------------------------------------>
+
+        <div class="giveMe44Top"></div>
+        <div class="row">
+            <div class="large-12 columns">
+                <h3 style="padding-top: 8px;">title</h3>
+                <div class="panel">
+                    How Much Space?
+                </div>
+                <div class="panel">
+                    <p>To get</p>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------>
+        <!------BOTTOM TAB BAR-------------BOTTOM TAB BAR-------------BOTTOM TAB BAR-------------BOTTOM TAB BAR------->
+        <!------------------------------------------------------------------------------------------------------------>
+        <div class="giveMe44Bottom"></div>
+        <!--TAB CONTROL AT BOTTOM-->
+        <nav class="bar bar-tab">
+            <a class="tab-item active" href="index.html">
+                <span class="icon icon-home2"></span>
+                <span class="tab-label">Home</span>
+            </a>
+            <a class="tab-item" href="kitchenSink.html">
+                <span class="icon icon-beer"></span>
+                <span class="tab-label">Kitchen</span>
+            </a>
+            <a class="tab-item" href="barcode.html">
+                <span class="icon icon-star8"></span>
+                <span class="tab-label">Menus</span>
+            </a>
+            <a class="tab-item" href="contacts.html">
+                <span class="icon icon-users5"></span>
+                <span class="tab-label">Contacts</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-gears"></span>
+                <span class="tab-label">Settings</span>
+            </a>
+        </nav>
+        <!------------------------------------------------------------------------------------------------------------>
+        <div data-role="view" class="thi">
+            <div style="color: white; position: absolute; bottom: 0;">
+
+            </div>
+        </div>
+
+
+        <script src="cordova.js"></script>
+        <script src="kendo/js/jquery.min.js"></script>
+        <script src="kendo/js/kendo.mobile.min.js"></script>
+
+        <script src="scripts/cession.js"></script>
+        <script src="scripts/foundation.min.js"></script>
+
+        <script>
+        $(document).foundation();
+        </script>
+
+    </body>
+</html>

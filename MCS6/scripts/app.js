@@ -15,7 +15,7 @@ var app = (function (win) {
 
         // Create the monitor instance using the unique product key for platform-friends-hybrid
         var productId = "923cdee8e93f46039014244c48bf5fcf";
-        var version = '1.0.0.4';
+        var version = '1.0.0.5';
         //date of version: 10/28 2:17am
 
         var settings = factory.CreateSettings(productId, version);

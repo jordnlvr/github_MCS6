@@ -24,10 +24,28 @@
 
 </head>
 <body class="thi">
-    <div>I want to create stuff</div>
+    <div class="panel" style="background-color: transparent; border: 0; width: 85%; max-width: 400px; margin: 0 auto; padding-top: 50px;">
+        <div id="login-dropdown">
+            <h4 style="color: white; font-family: AurulentSans;">Log In</h4>
+            <div>
+                <div class="row">
+                    <label style="color: white;"><u>Email Address:</u></label>
+                    <input type="email" name="email" placeholder="email@example.com" tabindex="1" style="background-color: #484343; color: white;" />
+                </div>
+                <div class="row">
+                    <label style="color: white;"><u>Password:</u></label>
+                    <input type="password" name="email" placeholder="********" tabindex="2" style="background-color: #484343; color: white;" />
+                </div>
+                <div class="row">
+                    <!--<input type="submit" class="button tiny success" value="Login" tabindex="3" />-->
+                    <a href="page1.html" class="button secondary tiny" style="font-size: 1em;">Login</a><br />
+                </div>
+            </div>
+        </div>
+    </div>
     <div data-role="view" class="thi">
-        <div>
-            I should have created it here.
+        <div style="color: white; position: absolute; bottom: 0;">
+
         </div>
     </div>
 
@@ -36,10 +54,10 @@
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/cession.js"></script>
+    <script src="scripts/foundation.min.js"></script>
 
     <script>
-        //$(document).foundation();
-
+        $(document).foundation();
     </script>
 
 </body>

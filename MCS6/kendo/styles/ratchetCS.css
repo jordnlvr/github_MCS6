@@ -1080,8 +1080,8 @@ select {
     also copied a zip of it to SkyDrive under business/cession stand */
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?76dizr');
-    src: url('../fonts/icomoon.eot?#iefix76dizr') format('embedded-opentype'), url('../fonts/icomoon.woff?76dizr') format('woff'), url('../fonts/icomoon.ttf?76dizr') format('truetype'), url('../fonts/icomoon.svg?76dizr#icomoon') format('svg');
+    src: url('icomoon.eot?76dizr');
+    src: url('icomoon.eot?#iefix76dizr') format('embedded-opentype'), url('icomoon.woff?76dizr') format('woff'), url('icomoon.ttf?76dizr') format('truetype'), url('icomoon.svg?76dizr#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
