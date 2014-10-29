@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".abproject" />
+    <Content Include="codepage.html" />
     <Content Include="cordova.android.js" />
     <Content Include="cordova.ios.js" />
     <Content Include="cordova.wp8.js" />
@@ -90,6 +91,7 @@
     <Content Include="kendo\typescript\kendo.mobile.d.ts" />
     <Content Include="kitchenSink.html" />
     <Content Include="page1.html" />
+    <Content Include="pageTemplate.html" />
     <Content Include="scripts\app.js" />
     <Content Include="scripts\appOld.js" />
     <Content Include="scripts\cession.js" />
@@ -97,6 +99,7 @@
     <Content Include="scripts\foundation.min.js" />
     <Content Include="scripts\jquery-1.11.1.min.js" />
     <Content Include="scripts\main.js" />
+    <Content Include="scripts\moment.js" />
     <Content Include="scripts\ratchet.js" />
     <Content Include="styles\foundation.css" />
     <Content Include="styles\foundation.min.css" />

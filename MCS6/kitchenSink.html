@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
-    <link href="css/ratchetCS.css" rel="stylesheet" />
-    <link href="css/ratchet-theme-ios.min.css" rel="stylesheet" />
+    <title>Page 1 Here</title>
+    <link href="styles/foundation.css" rel="stylesheet" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/ratchetCS.css" rel="stylesheet" />
+    <link href="styles/ratchet-theme-ios.min.css" rel="stylesheet" />
 </head>
 <body>
     <!--HEADER-->
@@ -118,7 +118,7 @@
                     <div class="row">
                         <div class="large-12 columns">
                             <label>Select Box</label>
-                            <select>
+                            <select id="userSelecter">
                                 <option value="husker">Husker</option>
                                 <option value="starbuck">Starbuck</option>
                                 <option value="hotdog">Hot Dog</option>
@@ -168,7 +168,7 @@
     <div class="giveMe44Bottom"></div>
         <!--TAB CONTROL AT BOTTOM-->
         <nav class="bar bar-tab">
-            <a class="tab-item active" href="index.html">
+            <a class="tab-item active" href="page1.html">
                 <span class="icon icon-home2"></span>
                 <span class="tab-label">Home</span>
             </a>
@@ -190,12 +190,16 @@
             </a>
         </nav>
 
-        <script src="js/vendor/jquery.js"></script>
-        <script src="js/vendor/fastclick.js"></script>
-        <script src="js/foundation.min.js"></script>
-    <script src="js/cession.js"></script>
-        <script>
-            $(document).foundation();
-        </script>
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+
+    <script src="scripts/cession.js"></script>
+    <script src="scripts/foundation.min.js"></script>
+
+    <script>
+        $(document).foundation();
+    </script>
 </body>
 </html>

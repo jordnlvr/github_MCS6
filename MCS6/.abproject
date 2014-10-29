@@ -6,7 +6,7 @@
   "DisplayName": "Concessions",
   "Author": "Kelly Seale",
   "Description": "Mobile app for concession stand",
-  "BundleVersion": "1.0.0.5",
+  "BundleVersion": "1.0.0.6",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",

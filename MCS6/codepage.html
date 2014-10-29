@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+        <script>
+
+            //------
+            var appIdIos = "ANW4E88FTG",
+                appIdAndroid = "com.seale.MCS6",
+                appIdWindows = "fc0fcfdc-9666-4c6a-b667-ee882fc3ba0d";
+
+
+            // process the confirmation dialog result
+            function onConfirm(button) {
+                alert('You selected button ' + button);
+            }
+
+            // Show a custom confirmation dialog
+            //
+            function showConfirm() {
+                navigator.notification.confirm(
+                    // The message
+                    "If you enjoy using my application, would you mind taking a minute " +
+                    "to rate it? Thanks!",
+                    // A callback when the user clicks a button
+                    function (index) {
+
+                        // index is the 1-based index of the clicked button.
+                        // 1 == Ok, 2 == Exit
+                        if (index === 1) {
+                            var url = device.platform === "Android" ?
+                                ("https://play.google.com/store/apps/details?id=" + appIdAndroid) :
+                                device.platform === "iOS" ?
+                                    ("http://itunes.apple.com/app/id" + appIdIos) :
+                                "http://windowsphone.com/s?appId=" + appIdWindows;
+                            window.open(url, "_blank");
+                        }
+                    },
+                    // The title of the notification
+                    "Rate My App",
+                    // The text for the two buttons
+                    ['Ok', 'Exit']
+                );
+            }
+            //------
+        </script>
+    </body>
+</html>

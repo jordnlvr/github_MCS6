@@ -29,16 +29,23 @@
             <h4 style="color: white; font-family: AurulentSans;">Log In</h4>
             <div>
                 <div class="row">
-                    <label style="color: white;"><u>Email Address:</u></label>
-                    <input type="email" name="email" placeholder="email@example.com" tabindex="1" style="background-color: #484343; color: white;" />
+                    <label style="color: white;"><u>Select User:</u></label>
+                    <select id="userSelector" style="background-color: #484343; color: white; font-size: 12pt;">
+                        <option class="tiny" value="Michelle">Michelle</option>
+                        <option value="Dana">Dana</option>
+                        <option value="Kelly">Kelly</option>
+                        <option value="Brad">Brad</option>
+                    </select>
                 </div>
                 <div class="row">
-                    <label style="color: white;"><u>Password:</u></label>
-                    <input type="password" name="email" placeholder="********" tabindex="2" style="background-color: #484343; color: white;" />
+                    <label style="color: white;"><u>Time/Date:</u></label>
+                    <!--<input type="text" id="date" name="date" style="background-color: #484343; color: white;" />-->
+                    <label id="date" class="spaced" style="background-color: #484343; color: white; padding: 12px 17px;">Label</label><br />
+
                 </div>
                 <div class="row">
                     <!--<input type="submit" class="button tiny success" value="Login" tabindex="3" />-->
-                    <a href="page1.html" class="button secondary tiny" style="font-size: 1em;">Login</a><br />
+                    <a href="page1.html" class="button secondary tiny" style="font-size: 1em;" onclick="setUser()">Login</a><br />
                 </div>
             </div>
         </div>
@@ -55,9 +62,19 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/cession.js"></script>
     <script src="scripts/foundation.min.js"></script>
+    <script src="scripts/moment.js"></script>
 
     <script>
         $(document).foundation();
+        $('#date').text(moment().format('MMM Do YYYY, h:mm:ss a'));
+
+        function setUser() {
+            var u = $("#userSelector").val();
+            var t = $("#date").text();
+            setCurrentUser(u, t);
+        }
+
+
     </script>
 
 </body>

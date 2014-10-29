@@ -18,4 +18,19 @@ function goBack() {
 }
 
 
+currentUser = {
+    username: ''
+};
+
+function setCurrentUser(u, t) {
+    // is localStorage available?
+    if (typeof window.localStorage !== "undefined") {
+        // store
+        localStorage.setItem("user", u);
+        localStorage.setItem("logontime", t);
+        // retrieve
+        //console.log(localStorage.getItem("hello"));
+    }
+}
+
 
